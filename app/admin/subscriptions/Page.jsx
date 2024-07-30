@@ -4,7 +4,7 @@ import axios from 'axios'
 import { toast, ToastContainer } from 'react-toastify'
 import SubsTableItem from '@/Components/AdminComponents/SubsTableItem'
 
-const page = () => {
+const Page = () => {
   const [emails, setEmails] = useState([])
   const [loading, setLoading] = useState(true)
 
