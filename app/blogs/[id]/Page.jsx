@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Footer from '@/Components/Footer';
 import Link from 'next/link';
 import axios from 'axios';
-const page = ({params}) => {
+const Page = ({params}) => {
     const [data,setData] = useState(null);
     const fetchBlogData = async ()=>{
        const response = await axios.get('/api/blog',{
@@ -54,4 +54,4 @@ const page = ({params}) => {
   )
 }
 
-export default page
+export default Page
